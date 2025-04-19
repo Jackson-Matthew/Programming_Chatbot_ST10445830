@@ -1,0 +1,36 @@
+name: CI - Build and Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x' 
+
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./ChatBot_V1.0
+
+    - name: Check code formatting
+      run: dotnet format --verify-no-changes
+      working-directory: ./ChatBot_V1.0
+
+    - name: Build the solution
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./ChatBot_V1.0
+
+    - name: Run syntax check (linting)
+      run: dotnet build --no-restore --no-incremental
+      working-directory: ./ChatBot_V1.0
