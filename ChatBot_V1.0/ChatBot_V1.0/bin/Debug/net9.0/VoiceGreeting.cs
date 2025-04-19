@@ -7,8 +7,12 @@ namespace ChatBot_V1._0
     {
         public void Greeting()
         {
-            SoundPlayer player = new SoundPlayer("Voice_GreetingIntro.wav");
-            player.Play();
+            if (OperatingSystem.IsWindows())
+            {
+                SoundPlayer player = new SoundPlayer("Voice_GreetingIntro.wav");
+                player.Play();
+            }
+
         }
     }
 }

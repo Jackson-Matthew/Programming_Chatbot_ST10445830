@@ -4,7 +4,6 @@
     {
         public void Heading()
         {
-
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 string titleText = ("                                                           Hello,and Welcome To C A B B Y\n");
@@ -37,10 +36,7 @@
 
 ============================================================================================================================================================";
                 Console.WriteLine(heading);
-
             }
         }
-
     }
 }
-

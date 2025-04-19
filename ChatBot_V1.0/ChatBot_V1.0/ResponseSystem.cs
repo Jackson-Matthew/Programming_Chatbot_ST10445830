@@ -17,7 +17,6 @@
                 TypingEffect2("\n" + "CABBY: " + response + "\n");
             }
         }
-
         public string Responsefeature(string userInput)
         {
             userInput = userInput.ToLower();
