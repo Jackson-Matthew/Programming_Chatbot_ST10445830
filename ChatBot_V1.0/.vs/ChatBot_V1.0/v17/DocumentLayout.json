@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\responsesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\responsesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\imagedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\imagedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ImageDisplay.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ImageDisplay.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\ImageDisplay.cs",
@@ -55,37 +55,38 @@
               "RelativeToolTip": "ChatBot_V1.0\\ImageDisplay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T18:37:57.438Z"
+              "WhenOpened": "2025-04-14T18:37:57.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BotInterface.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\BotInterface.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\BotInterface.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\BotInterface.cs",
               "RelativeToolTip": "ChatBot_V1.0\\BotInterface.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwDgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T20:57:50.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ResponseSystem.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ResponseSystem.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\ResponseSystem.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ResponseSystem.cs",
               "RelativeToolTip": "ChatBot_V1.0\\ResponseSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T20:26:50.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VoiceGreeting.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\VoiceGreeting.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\VoiceGreeting.cs",
