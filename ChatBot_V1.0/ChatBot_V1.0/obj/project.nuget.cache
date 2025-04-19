@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ta3inaG5LKk=",
+  "dgSpecHash": "iu1LOeNdtd0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Part1_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ChatBot_V1.0.csproj",
+  "projectFilePath": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ChatBot_V1.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
