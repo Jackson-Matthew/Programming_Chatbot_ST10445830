@@ -12,7 +12,6 @@ namespace ChatBot_V1._0
                 SoundPlayer player = new SoundPlayer("Voice_GreetingIntro.wav");
                 player.Play();
             }
-
         }
     }
 }

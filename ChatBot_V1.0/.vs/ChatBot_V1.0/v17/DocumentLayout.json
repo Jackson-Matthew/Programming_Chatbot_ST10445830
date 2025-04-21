@@ -43,8 +43,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T11:29:09.921Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -54,7 +53,7 @@
               "RelativeDocumentMoniker": "ChatBot_V1.0\\ImageDisplay.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ImageDisplay.cs",
               "RelativeToolTip": "ChatBot_V1.0\\ImageDisplay.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T18:37:57.438Z",
               "EditorCaption": ""
@@ -67,7 +66,7 @@
               "RelativeDocumentMoniker": "ChatBot_V1.0\\BotInterface.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\BotInterface.cs",
               "RelativeToolTip": "ChatBot_V1.0\\BotInterface.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T20:57:50.8Z",
               "EditorCaption": ""

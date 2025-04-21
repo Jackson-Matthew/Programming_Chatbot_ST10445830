@@ -17,7 +17,7 @@
             foreach (var character in text)
             {
                 Console.Write(character);
-                Thread.Sleep(65);
+                Thread.Sleep(40);
             }
             Console.WriteLine();
         }
@@ -28,8 +28,10 @@
 
         {"how are you","I'm doing great! How about you ?"},
         {"purpose","I'm here to help you stay safe online by providing cybersecurity tips ! "},
-        {"questions", "I can provide information on the following: \n > Phishing \n > Password Saftey \n > Safe browsing practices"},
-        
+        {"ask you", "I can provide information on the following: \n > Phishing \n > Password Saftey \n > Safe browsing practices"},
+        {"yes","Sure ! What woudld you like me to reclarify on ?" },
+        {"no.","Awesome thanks for the chat ;)" },
+
         //greetings 
 
         {"thank you","Glad i could help ;) Anything else I can assist with?"},
@@ -42,12 +44,12 @@
         //theory based questions
         
         {"phishing","Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information."},
-        {"password saftey","Using long and complex passwords helps prevent unauthorized access to your data. Make sure each password is unique and includes a mix of letters, numbers, and special characters."},
-        {"safe browsing","Safe browsing involves being cautious online—avoiding suspicious websites, not clicking unknown links, and ensuring websites are secure before entering sensitive information." },
+        {"password saftey","> Using long and complex passwords helps prevent unauthorized access to your data.\n  > Make sure each password is unique and includes a mix of letters, numbers, and special characters."},
+        {"safe browsing"," Safe browsing involves being cautious online\n > Avoiding suspicious websites \n > Not clicking unknown links \n > Ensuring websites are secure before entering sensitive information." },
 
-
-        {"examples","\n> Ensure that the website your on is using HTTPS for a secure connection \n> Avoid Suspicious looking links \n> Make sure your browser is up to date with the latest security updates "},
-        {"can you tell me more ","\n> Ensure that the website your on is using HTTPS for a secure connection \n> Avoid Suspicious looking links \n>Make sure your browser is up to date with the latest security updates "}
+        {"examples", "Phising occurs mostly via: Email,SMS,Messenger services, these messages will usually contain deceptive/fake links" },
+        {"explain","A strong password for maximum privacy should include \n >A mix of numbers and letters \n >Various symbols \n > 16 or more charcters \n > Not be easily guessable" },
+        {"secure","\n> Ensure that the website your on is using HTTPS for a secure connection \n> Check for Suspicious looking links \n> Make sure your browser is up to date with the latest security updates "}
 };
 
         public string Reader()
