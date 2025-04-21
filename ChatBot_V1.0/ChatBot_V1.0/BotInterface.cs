@@ -8,7 +8,7 @@
      * speed at which these characters are printed out onto the console.
      */
 
-    class BotInterface 
+    class BotInterface
     {
         public void TypingEffect1(string text)
         {
