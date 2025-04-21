@@ -12,6 +12,8 @@
 
             ResponseSystem response = new ResponseSystem();
             response.Response();
+
+            // Methods from their respective classes are called and implemented in the main.
         }
     }
 }

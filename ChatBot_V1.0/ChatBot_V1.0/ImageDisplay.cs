@@ -11,7 +11,7 @@
 
                 TypingEffect1(titleText);
                 TypingEffect1(subText);
-                string heading = @"                                                                                           
+                string mainHeading = @"                                                                                           
 ============================================================================================================================================================
 
                                                         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░               
@@ -35,8 +35,11 @@
                                                       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                            
 
 ============================================================================================================================================================";
-                Console.WriteLine(heading);
+                Console.WriteLine(mainHeading);
             }
         }
     }
 }
+// ASCII text header to be displayed when the program runs.
+
+// ImageDisplay Extends BotInterface and uses the TypingEffect1 method to print the text.
