@@ -1,4 +1,6 @@
-﻿namespace ChatBot_V1._0
+﻿using System.Text.Json;
+
+namespace ChatBot_V1._0
 {
     // Parent Class that other classes Inherit from 
 
@@ -7,7 +9,6 @@
      * The string text takes in all text and loops through it each character is then printed out, Thread.sleep() determines the 
      * speed at which these characters are printed out onto the console.
      */
-
     class BotInterface
     {
         public void TypingEffect1(string text)
@@ -36,41 +37,123 @@
          * The program will loop through the dictionary to determine if the input matches a key then returns the value.
          */
 
-
-        public Dictionary<string, string> variousResponses = new Dictionary<string, string>()
-    {
-        //conversational based questions
-
-        {"how are you","I'm doing great! How about you ?"},
-        {"purpose","I'm here to help you stay safe online by providing cybersecurity tips ! "},
-        {"ask you", "I can provide information on the following: \n > Phishing and examples \n > Password Safety and explanations \n > Safe browsing practices and determining if websites are secure"},
-        {"yes","Sure ! What would you like me to clarify on ?" },
-        {"no.","Awesome thanks for the chat ;)" },
-
-        //greetings 
-
-        {"thank you","Glad i could help ;) Anything else I can assist with?"},
-        {"help","Sure no problem ! What would you like help with?" },
-        {"goodbye","Cheers, thanks for the chat ;)" },
-        {"joke","Why did the computer show up at work late?...... \n It had a hard drive" },
-        {"lol","Glad you thought my joke was funny ! Anything else i can help with?"},
-        {"good thanks","Cool, No problem"},
-
-        //theory based questions
-        
-        {"phishing","Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information."},
-        {"password safety","\n > Using long and complex passwords helps prevent unauthorized access to your data.\n > Make sure each password is unique and includes a mix of letters, numbers, and special characters."},
-        {"safe browsing","\n Safe browsing involves being cautious online: \n > Avoiding suspicious websites \n > Not clicking unknown links \n > Ensuring websites are secure before entering sensitive information." },
-
-        {"examples", "Phishing occurs mostly via: Email,SMS,Messenger services, these messages will usually contain deceptive/fake links" },
-        {"explain","A strong password for maximum privacy should include \n > A mix of numbers and letters \n > Various symbols \n > 16 or more charcters \n > Not be easily guessable" },
-        {"secure","\n> Ensure that the website your on is using HTTPS for a secure connection \n> Check for Suspicious looking links \n> Make sure your browser is up to date with the latest security updates "}
-    };
-
         //reader method for user input in the ResponseSystem class.
+
+        public Dictionary<string, List<string>> CabbyResponses = new();
+
+        public BotInterface()
+        {
+            LoadResponses("ChatbotResponses.txt");
+        }
+
+        private void LoadResponses(string filePath)
+        {
+            foreach (var line in File.ReadAllLines(filePath))
+            {
+                if (!line.Contains('|')) continue;
+
+                var parts = line.Split('|', 2);
+                string key = parts[0].Trim().ToLower();
+                string jsonList = parts[1].Trim();
+
+                try
+                {
+                    var responseList = JsonSerializer.Deserialize<List<string>>(jsonList);
+                    if (responseList != null)
+                        CabbyResponses[key] = responseList;
+                }
+                catch
+                {
+                    // handle improperly formatted lines or log them
+                }
+            }
+        }
+
+
+        public string GetResponse(string userInput)
+        {
+            string keyword = GetKeyword(userInput.ToLower());
+
+            if (keyword != null && CabbyResponses.ContainsKey(keyword))
+            {
+                var possibleResponses = CabbyResponses[keyword];
+                return possibleResponses[new Random().Next(possibleResponses.Count)];
+            }
+
+            return "Sorry, I didn't quite understand that.";
+        }
+
+        // Simple keyword matcher
+        private string GetKeyword(string input)
+        {
+            // Sort keywords by length (descending) to match more specific phrases first
+            foreach (var key in CabbyResponses.Keys.OrderByDescending(k => k.Length))
+            {
+                if (input.Contains(key))
+                    return key;
+            }
+
+            return null;
+        }
+
+
+
         public string Reader()
         {
             return Console.ReadLine();
         }
+
+       /* private string memoryfilepath = "Memory.txt";
+
+        public Dictionary<string, string> LoadMemory()
+        {
+            var memory = new Dictionary<string, string>();
+            if (File.Exists(memoryfilepath))
+            {
+                foreach (var line in File.ReadAllLines(memoryfilepath))
+                {
+                    var parts = line.Split('=', 2);
+                    if (parts.Length == 2)
+                    {
+                        memory[parts[0]] = parts[1];
+                    }
+                }
+            }
+            return memory;
+        }
+        private Dictionary<string, string> chatMemory = new Dictionary<string, string>();
+
+       public void SaveToMemory(string userInput, string response)
+{
+    string key = userInput.ToLower().Trim();
+    chatMemory[key] = response;
+    File.AppendAllText(memoryfilepath, $"{key}|{response}{Environment.NewLine}");
+}
+
+
+
+        /*
+        public string RecallFromMemory(string keyword)
+        {
+
+            keyword = keyword.ToLower().Trim();
+
+            foreach (var entry in chatMemory)
+            {
+                if (entry.Key.Contains(keyword))
+                {
+                    return $"Yes, earlier you asked about \"{keyword}\". Here's what I said: \"{entry.Value}\"";
+                }
+            }
+            return "I don't recall us talking about that yet.";
+        }
+
+        */
+
     }
 }
+
+
+
+
+

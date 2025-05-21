@@ -1,0 +1,51 @@
+﻿// General Interaction
+
+test|["Yes, I'm here!!", "Hey there! I'm online and ready to chat.", "Present and ready to help!"] 
+
+
+how are you|["I'm doing great! How about you?", "Feeling cyber-secure and ready to assist — how are you?", "All systems go! Let me know how I can help you today."] 
+
+
+purpose|["I'm here to help you stay safe online by providing cybersecurity tips!","I’m your cybersecurity companion. Ask me anything to stay safe on the internet.","My job is to guide you through safe online practices. Ask away!"]
+
+
+ask you|["You can ask me about things like: > Phishing and examples > Password safety > Safe browsing tips","Need help with cybersecurity? I cover: > Phishing > Password strength > Secure browsing","I'm good with: > Recognizing phishing > Creating strong passwords > Spotting secure websites"]
+
+
+yes|["Sure! What would you like me to clarify?","Absolutely! Let's dive in.","Of course. What can I help with?"]
+
+
+no|["Awesome, thanks for the chat ;)","Okay, take care and stay cyber-safe!","All right! Let me know if you need help later."]
+
+
+thank you|["Glad I could help! Anything else?","You're welcome! Stay safe online.","Happy to help. Got any other questions?"]
+
+
+help|["Sure, no problem! What would you like help with?","I'm here to assist. What do you need?","Of course! Tell me what you're stuck on."]
+
+
+goodbye|["Cheers, thanks for the chat ;)","Goodbye! Stay safe and secure.","See you later! Don’t forget to use strong passwords."]
+
+
+joke|["Why did the computer show up at work late?...... It had a hard drive.","Why do hackers wear leather jackets? Because they love to break the code!","Why was the smartphone acting shy? It lost its sense of security."]
+
+
+good thanks|"Cool, no problem.","Glad to hear it!","Awesome. If you have any questions, let me know."]
+
+
+// Cybersecurity Information
+
+phishing|["Phishing is a cyberattack where deceptive messages trick users into giving up personal info.","Phishing is a scam where fake messages lure people into revealing sensitive data like passwords or banking info.","It’s when attackers pose as trusted sources to steal your credentials or money—often via email or SMS."]
+
+
+password safety|["> Use long, unique passwords > Include letters, numbers, and symbols > Avoid personal info","> Each account should have a different password > Use a password manager if needed"," > Create strong passwords (16+ characters) > Avoid reused or easy-to-guess ones"]
+
+
+safe browsing|["Safe browsing includes: > Avoiding suspicious links > Not downloading unknown files > Checking website security","Stay safe by: > Using secure (HTTPS) websites > Avoiding public Wi-Fi for transactions > Keeping your browser updated","To browse safely: > Be cautious of pop-ups > Use antivirus software > Don’t share personal info carelessly"]
+
+
+safe browsing examples|["Example 1: When shopping online, make sure the site uses HTTPS and has a padlock icon.","Example 2: Avoid clicking on pop-up ads that say you’ve won a prize—these are often scams.","Example 3: When using public Wi-Fi, avoid logging into banking or email accounts unless you're on a VPN.","Example 4: Before downloading software, verify the source is trusted and read user reviews.","Example 5: Always update your browser to the latest version to fix known security issues."]
+
+
+
+

@@ -39,3 +39,5 @@ C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1
 C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1.0\ChatBot_V1.0\obj\Debug\net9.0\ChatBot_V1.0.pdb
 C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1.0\ChatBot_V1.0\obj\Debug\net9.0\ChatBot_V1.0.genruntimeconfig.cache
 C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1.0\ChatBot_V1.0\obj\Debug\net9.0\ref\ChatBot_V1.0.dll
+C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1.0\ChatBot_V1.0\bin\Debug\net9.0\ChatbotResponses.txt
+C:\Users\matth\OneDrive\Desktop\GitHub\Programming_Chatbot_ST10445830\ChatBot_V1.0\ChatBot_V1.0\bin\Debug\net9.0\Memory.txt

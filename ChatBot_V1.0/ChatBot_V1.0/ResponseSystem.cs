@@ -9,13 +9,18 @@
         */
         public void Response()
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            TypingEffect2("CABBY: What is your name?\n");
-            Console.ResetColor();
+            // VariousResponses();
 
-            Console.ForegroundColor = ConsoleColor.White;
-            String userName = Console.ReadLine();
-            Console.ResetColor();
+            // BotInterface memory = new BotInterface();
+            BotInterface bot = new BotInterface();
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+                TypingEffect2("CABBY: What is your name?\n");
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.White;
+                string userName = Console.ReadLine();
+                Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             TypingEffect2("\nCABBY: What can I assist you with " + userName + "?\n");
@@ -30,35 +35,67 @@
 
                 if (string.IsNullOrWhiteSpace(input))
                 {
-                    TypingEffect2("\nCABBY, I didnt quite get that, Could you tell me again?\n ");
+                    TypingEffect2("\nCABBY: I didnt quite get that, Could you tell me again?\n ");
                     continue;
                 }
 
-                string systemResponse = Responsefeature(input);
+                string userInput = input.ToLower();
+/*
+                // Memory recall detection
+                if (userInput.Contains("did we talk about") ||
+                    userInput.Contains("did i ask about") ||
+                    userInput.Contains("have we spoken about") ||
+                    userInput.Contains("have we talked about") ||
+                    userInput.Contains("did we discuss") ||
+                    userInput.Contains("have we mentioned"))
+                {
+                    string[] possibleKeywords = userInput.Split(' ');
+                    string[] skipWords = { "did", "we", "talk", "about", "i", "ask", "spoken", "have", "mentioned", "discuss" };
 
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                TypingEffect2("\n" + "CABBY: " + systemResponse + "\n");
-                Console.ResetColor();
+                    // Filter out common filler words
+                    var keywords = possibleKeywords
+                        .Where(word => !skipWords.Contains(word.ToLower()))
+                        .ToList();
+
+                    if (keywords.Count > 0)
+                    {
+                        string keyword = string.Join(" ", keywords); // Support multi-word topics
+                        string recallResponse = memory.RecallFromMemory(keyword);
+                        TypingEffect2("\nCABBY: " + recallResponse + "\n");
+                        continue;
+                    }
+                    else
+                    {
+                        TypingEffect2("\nCABBY: Can you remind me what topic you're referring to?\n");
+                        continue;
+                    }
+                }
+*/
+                string matched = CabbyResponses.Keys.FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
+
+                if (matched != null)
+                {
+                    var responses = CabbyResponses[matched];
+                    string replyBot = responses[new Random().Next(responses.Count)];
+
+                   // memory.SaveToMemory(userInput, replyBot);
+
+
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect2("\n" + "CABBY: " + replyBot + "\n");
+                    Console.ResetColor();
+                    continue;
+                }
+                else
+                {
+                    TypingEffect2("\nCABBY: I don't quite understand , could you rephrase?");
+                }
             }
         }
-        /* 
+    }
+}  
+/* 
          * Responsefeature method implements the dictionary created in BotInterface,
          * if the user input is upper case the userInput is converted to lowercase so 
          * that the text can correspond with the keywords set in the dictionary.
          */
-        public string Responsefeature(string userInput)
-        {
-            userInput = userInput.ToLower();
-
-
-            foreach (var Word in variousResponses.Keys)
-            {
-                if (userInput.Contains(Word))
-                {
-                    return variousResponses[Word];
-                }
-            }
-            return "Sorry, I didn't quite get that, could you rephrase?";
-        }
-    }
-}

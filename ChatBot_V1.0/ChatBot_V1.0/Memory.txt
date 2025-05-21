@@ -1,0 +1,2 @@
+﻿username=
+last_topic=
