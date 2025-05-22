@@ -56,12 +56,12 @@ namespace ChatBot_V1._0
         private Dictionary<string, string> lastResponses = new();
         public string GetResponse(string userInput)
         {
-            string keyword = GetKeyword(userInput.ToLower());
+            string? keyword = GetKeyword(userInput.ToLower());
 
             if (keyword != null && CabbyResponses.ContainsKey(keyword))
             {
                 var possibleResponses = CabbyResponses[keyword];
-                string lastResponse = lastResponses.ContainsKey(keyword) ? lastResponses[keyword] : null;
+                string? lastResponse = lastResponses.ContainsKey(keyword) ? lastResponses[keyword] : null;
 
                 var options = possibleResponses.Where(r => r != lastResponse).ToList();
 
@@ -77,7 +77,7 @@ namespace ChatBot_V1._0
             return "Sorry, I didn't quite understand that.";
 
         }
-        private string GetKeyword(string input)
+        private string? GetKeyword(string input)
         {
             foreach (var key in CabbyResponses.Keys.OrderByDescending(k => k.Length))
             {
@@ -86,7 +86,7 @@ namespace ChatBot_V1._0
             }
             return null;
         }
-        public string Reader()
+        public string? Reader()
         {
             return Console.ReadLine();
         }
