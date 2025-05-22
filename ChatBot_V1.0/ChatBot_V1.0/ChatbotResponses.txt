@@ -21,6 +21,18 @@ no|["Awesome, thanks for the chat ;)","Okay, take care and stay cyber-safe!","Al
 thank you|["Glad I could help! Anything else?","You're welcome! Stay safe online.","Happy to help. Got any other questions?"]
 
 
+thanks|["No problem glad i could help","all good, good to chat !! :)"]
+
+
+question|["fire away ;) I'm here to help !!"]
+
+
+questions|["fire away ;) I'm here to help !!"]
+
+
+questions can|["I can assist with cyber-security related questions, such as phishing, password safety and safe browsing practices"]
+
+
 help|["Sure, no problem! What would you like help with?","I'm here to assist. What do you need?","Of course! Tell me what you're stuck on."]
 
 
@@ -33,19 +45,60 @@ joke|["Why did the computer show up at work late?...... It had a hard drive.","W
 good thanks|"Cool, no problem.","Glad to hear it!","Awesome. If you have any questions, let me know."]
 
 
-// Cybersecurity Information
-
-phishing|["Phishing is a cyberattack where deceptive messages trick users into giving up personal info.","Phishing is a scam where fake messages lure people into revealing sensitive data like passwords or banking info.","It’s when attackers pose as trusted sources to steal your credentials or money—often via email or SMS."]
+//phishing
 
 
-password safety|["> Use long, unique passwords > Include letters, numbers, and symbols > Avoid personal info","> Each account should have a different password > Use a password manager if needed"," > Create strong passwords (16+ characters) > Avoid reused or easy-to-guess ones"]
+phishing|["Phishing is a scam where fake messages lure people into revealing sensitive data like passwords or banking info.","Phishing is a cyberattack where deceptive messages trick users into giving up personal info."]
+
+
+examples of phishing|["> Fake emails from banks or services asking you to log in > Texts with urgent language and suspicious links > Social media messages with strange links"]
+
+
+phishing examples|["Examples include: > 'Your account has been suspended' emails > Fake websites mimicking real ones > Messages urging you to confirm payment info urgently"]
+
+
+phishing tips|["> Don't click suspicious links or attachments > Always verify the sender's email address > Hover over links to see the real URL before clicking"]
+
+
+avoid phishing|["> Use spam filters > Don’t trust urgent requests for personal info > Never share passwords via email or text"]
+
+
+identify phishing|["Look for: > Spelling errors > Urgent or threatening tone > Mismatched URLs or sender addresses"]
+
+
+//Password saftey
+
+what is password safety|["Password safety involves creating and managing strong, unique passwords for each online account to prevent unauthorized access"]
+
+
+password safety|["Use strong, unique passwords for every account — include letters, numbers, and symbols. Avoid using personal info like birthdays."]
+
+
+strong password|["> Use long, unique passwords > Include letters, numbers, and symbols > Avoid personal info"]
+
+
+methods of password safety|["> Each account should have a different password > Use a password manager if needed"]
+
+
+good password|["Good passwords, should contain a mix of both Numbers, Letters and Special characters"]
+
+
+password tips|["Never reuse the same password across multiple accounts — use a password manager if needed."]
+
+
+//safe browsing
+
+what is safe browsing|["Safe browsing refers to habits and practices that protect users while navigating the internet."]
+
+
+examples of safe browsing|["When shopping online, make sure the site uses HTTPS and has a padlock icon.","Example 4: Before downloading software, verify the source is trusted and read user reviews.","Example 5: Always update your browser to the latest version to fix known security issues."]
 
 
 safe browsing|["Safe browsing includes: > Avoiding suspicious links > Not downloading unknown files > Checking website security","Stay safe by: > Using secure (HTTPS) websites > Avoiding public Wi-Fi for transactions > Keeping your browser updated","To browse safely: > Be cautious of pop-ups > Use antivirus software > Don’t share personal info carelessly"]
 
 
-safe browsing examples|["Example 1: When shopping online, make sure the site uses HTTPS and has a padlock icon.","Example 2: Avoid clicking on pop-up ads that say you’ve won a prize—these are often scams.","Example 3: When using public Wi-Fi, avoid logging into banking or email accounts unless you're on a VPN.","Example 4: Before downloading software, verify the source is trusted and read user reviews.","Example 5: Always update your browser to the latest version to fix known security issues."]
+safe browsing examples|["Avoid clicking on pop-up ads that say you’ve won a prize—these are often scams."]
 
 
-
+safe browsing practices|["When using public Wi-Fi, avoid logging into banking or email accounts unless you're on a VPN."]
 

@@ -9,7 +9,7 @@
         */
         public void Response()
         {
-            // VariousResponses();
+            //VariousResponses();
 
             // BotInterface memory = new BotInterface();
             BotInterface bot = new BotInterface();
@@ -35,43 +35,47 @@
 
                 if (string.IsNullOrWhiteSpace(input))
                 {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     TypingEffect2("\nCABBY: I didnt quite get that, Could you tell me again?\n ");
+                    Console.ResetColor();
                     continue;
                 }
 
                 string userInput = input.ToLower();
-/*
-                // Memory recall detection
-                if (userInput.Contains("did we talk about") ||
-                    userInput.Contains("did i ask about") ||
-                    userInput.Contains("have we spoken about") ||
-                    userInput.Contains("have we talked about") ||
-                    userInput.Contains("did we discuss") ||
-                    userInput.Contains("have we mentioned"))
-                {
-                    string[] possibleKeywords = userInput.Split(' ');
-                    string[] skipWords = { "did", "we", "talk", "about", "i", "ask", "spoken", "have", "mentioned", "discuss" };
 
-                    // Filter out common filler words
-                    var keywords = possibleKeywords
-                        .Where(word => !skipWords.Contains(word.ToLower()))
-                        .ToList();
+                /*
+                                // Memory recall detection
+                                if (userInput.Contains("did we talk about") ||
+                                    userInput.Contains("did i ask about") ||
+                                    userInput.Contains("have we spoken about") ||
+                                    userInput.Contains("have we talked about") ||
+                                    userInput.Contains("did we discuss") ||
+                                    userInput.Contains("have we mentioned"))
+                                {
+                                    string[] possibleKeywords = userInput.Split(' ');
+                                    string[] skipWords = { "did", "we", "talk", "about", "i", "ask", "spoken", "have", "mentioned", "discuss" };
 
-                    if (keywords.Count > 0)
-                    {
-                        string keyword = string.Join(" ", keywords); // Support multi-word topics
-                        string recallResponse = memory.RecallFromMemory(keyword);
-                        TypingEffect2("\nCABBY: " + recallResponse + "\n");
-                        continue;
-                    }
-                    else
-                    {
-                        TypingEffect2("\nCABBY: Can you remind me what topic you're referring to?\n");
-                        continue;
-                    }
-                }
-*/
-                string matched = CabbyResponses.Keys.FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
+                                    // Filter out common filler words
+                                    var keywords = possibleKeywords
+                                        .Where(word => !skipWords.Contains(word.ToLower()))
+                                        .ToList();
+
+                                    if (keywords.Count > 0)
+                                    {
+                                        string keyword = string.Join(" ", keywords); // Support multi-word topics
+                                        string recallResponse = memory.RecallFromMemory(keyword);
+                                        TypingEffect2("\nCABBY: " + recallResponse + "\n");
+                                        continue;
+                                    }
+                                    else
+                                    {
+                                        TypingEffect2("\nCABBY: Can you remind me what topic you're referring to?\n");
+                                        continue;
+                                    }
+                                }
+                */
+
+                string matched = CabbyResponses.Keys.OrderByDescending(k => k.Length).FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
 
                 if (matched != null)
                 {
@@ -80,7 +84,6 @@
 
                    // memory.SaveToMemory(userInput, replyBot);
 
-
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     TypingEffect2("\n" + "CABBY: " + replyBot + "\n");
                     Console.ResetColor();
@@ -88,14 +91,17 @@
                 }
                 else
                 {
-                    TypingEffect2("\nCABBY: I don't quite understand , could you rephrase?");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect2("\nCABBY: I don't quite understand , could you rephrase?"+"\n");
+                    Console.ResetColor();
                 }
             }
         }
     }
 }  
-/* 
-         * Responsefeature method implements the dictionary created in BotInterface,
-         * if the user input is upper case the userInput is converted to lowercase so 
-         * that the text can correspond with the keywords set in the dictionary.
-         */
+         
+ /* 
+ * Responsefeature method implements the dictionary created in BotInterface,
+ * if the user input is upper case the userInput is converted to lowercase so 
+ * that the text can correspond with the keywords set in the dictionary.
+ */
