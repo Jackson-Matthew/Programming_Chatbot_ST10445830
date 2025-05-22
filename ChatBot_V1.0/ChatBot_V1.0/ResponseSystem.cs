@@ -25,7 +25,7 @@
             Console.ForegroundColor = ConsoleColor.Cyan;
             TypingEffect2("\nCABBY: What can I assist you with " + userName + "?\n");
             Console.ResetColor();
-
+            
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.White;
@@ -42,8 +42,7 @@
                 }
 
                 string userInput = input.ToLower();
-
-                /*
+                
                                 // Memory recall detection
                                 if (userInput.Contains("did we talk about") ||
                                     userInput.Contains("did i ask about") ||
@@ -73,7 +72,7 @@
                                         continue;
                                     }
                                 }
-                */
+                
 
                 string matched = CabbyResponses.Keys.OrderByDescending(k => k.Length).FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
 

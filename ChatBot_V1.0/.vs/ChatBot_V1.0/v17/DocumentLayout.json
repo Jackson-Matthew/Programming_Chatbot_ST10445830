@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\responsesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\responsesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\botinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\chatbotresponses.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\chatbotresponses.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|c:\\users\\matth\\onedrive\\desktop\\github\\programming_chatbot_st10445830\\chatbot_v1.0\\chatbot_v1.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F319AFB-C50E-4911-AF01-99155B68DC07}|ChatBot_V1.0\\ChatBot_V1.0.csproj|solutionrelative:chatbot_v1.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\Program.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\Program.cs",
@@ -48,39 +48,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BotInterface.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\BotInterface.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\BotInterface.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\BotInterface.cs",
               "RelativeToolTip": "ChatBot_V1.0\\BotInterface.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T07:27:57.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ChatbotResponses.txt",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ChatbotResponses.txt",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\ChatbotResponses.txt",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ChatbotResponses.txt",
               "RelativeToolTip": "ChatBot_V1.0\\ChatbotResponses.txt",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-05-13T21:17:08.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ResponseSystem.cs",
               "DocumentMoniker": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ResponseSystem.cs",
               "RelativeDocumentMoniker": "ChatBot_V1.0\\ResponseSystem.cs",
               "ToolTip": "C:\\Users\\matth\\OneDrive\\Desktop\\GitHub\\Programming_Chatbot_ST10445830\\ChatBot_V1.0\\ChatBot_V1.0\\ResponseSystem.cs",
               "RelativeToolTip": "ChatBot_V1.0\\ResponseSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwEAAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T20:26:50.171Z",
               "EditorCaption": ""
