@@ -90,56 +90,8 @@ namespace ChatBot_V1._0
         {
             return Console.ReadLine();
         }
-
-        private string memoryfilepath = "Memory.txt";
-
-        public Dictionary<string, string> LoadMemory()
-        {
-            var memory = new Dictionary<string, string>();
-            if (File.Exists(memoryfilepath))
-            {
-                foreach (var line in File.ReadAllLines(memoryfilepath))
-                {
-                    var parts = line.Split('=', 2);
-                    if (parts.Length == 2)
-                    {
-                        memory[parts[0]] = parts[1];
-                    }
-                }
-            }
-            return memory;
-        }
-        private Dictionary<string, string> chatMemory = new Dictionary<string, string>();
-
-        public void SaveToMemory(string userInput, string response)
-        {
-            string key = userInput.ToLower().Trim();
-            chatMemory[key] = response;
-            File.AppendAllText(memoryfilepath, $"{key}|{response}{Environment.NewLine}");
-        }
-
-        public string RecallFromMemory(string keyword)
-        {
-
-            keyword = keyword.ToLower().Trim();
-
-            foreach (var entry in chatMemory)
-            {
-                if (entry.Key.Contains(keyword))
-                {
-                    return $"Yes, earlier you asked about \"{keyword}\". Here's what I said: \"{entry.Value}\"";
-                }
-            }
-            return "I don't recall us talking about that yet.";
-        }
     }
 }
-
-
-
-
-
-
 
 /* 
 * The TypingEffect methods aims to simulate each word that the system outputs as if it is being typed.

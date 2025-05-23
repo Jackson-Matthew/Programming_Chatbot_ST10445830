@@ -1,16 +1,1 @@
-username=matt
-last_topic=yes
-what is phishing?|Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information.
-have we discussed phishing?|Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information.
-can you tell me a joke?|Why did the computer show up at work late?......  It had a hard drive
-what is phishing?|Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information.
-ok thank you|Glad i could help ;) Anything else I can assist with?
-what is phishing?|Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information.
-what is password safety| > Using long and complex passwords helps prevent unauthorized access to your data.\n > Make sure each password is unique and includes a mix of letters, numbers, and special characters.
-cool thank you|Glad i could help ;) Anything else I can assist with?
-did we disscuss phishing?|Phishing is a common cyberattack that targets individuals by sending deceptive messages designed to trick them into revealing sensitive information.
-help|Of course! Tell me what you're stuck on.
-help|Of course! Tell me what you're stuck on.
-test|Present and ready to help!
-test|Present and ready to help!
-how are you|All systems go! Let me know how I can help you today.
+interest|phishing can you remember that

@@ -7,6 +7,7 @@
          * Asking for name is put outside of main response functionality to reduce looping of the same question.
          * Input validation to check if the user has entered anything, if no input is detected a message is displayed prompting the user for input.
         */
+        public MemorySystem memory = new MemorySystem();
         public void Response()
         {
             BotInterface bot = new BotInterface();
@@ -23,6 +24,12 @@
             TypingEffect2("\nCABBY: What can I assist you with " + userName + "?\n");
             Console.ResetColor();
 
+            string? inputMemory = userName;
+
+            System.IO.File.WriteAllText("Memory.txt", inputMemory);
+
+            string? savedName = File.ReadAllText("Memory.txt");
+
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.White;
@@ -33,28 +40,66 @@
                 if (string.IsNullOrWhiteSpace(input))
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect2("\nCABBY: I didnt quite get that, Could you tell me again?\n ");
+                    TypingEffect2("\nCABBY: I didn't quite get that, could you tell me again?\n");
                     Console.ResetColor();
                     continue;
                 }
 
                 string userInput = input.ToLower();
-                string? matched = CabbyResponses.Keys.OrderByDescending(k => k.Length).FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
+                string? matched = CabbyResponses.Keys
+                    .OrderByDescending(k => k.Length)
+                    .FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
 
-                if (matched != null)
+                if (userInput.Contains("what was i interested in"))
+                {
+                    string? topic = memory.RecallInterest();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect2(topic != null
+                        ? $"\nCABBY: You said you were interested in {topic}.\n"
+                        : "\nCABBY: I don't remember you mentioning an interest yet.\n");
+                    Console.ResetColor();
+                }
+                else if (userInput.StartsWith("im interested in") ||
+                         userInput.StartsWith("i'm interested in") ||
+                         userInput.StartsWith("i am interested in"))
+                {
+                    string topic = input.Replace("i'm interested in", "", StringComparison.OrdinalIgnoreCase)
+                                        .Replace("i am interested in", "", StringComparison.OrdinalIgnoreCase)
+                                        .Replace("im interested in", "", StringComparison.OrdinalIgnoreCase)
+                                        .Trim();
+                    memory.SaveInterest(topic);
+
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect2($"\nCABBY: Got it! I've noted that you're interested in {topic}.\n");
+                    Console.ResetColor();
+                }
+                else if (userInput.Contains("my name"))
+                {
+                    if (File.Exists("Memory.txt"))
+                    {
+                        string sName = File.ReadAllText("Memory.txt");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        TypingEffect2("\nCABBY: Your name is " + sName + ".\n");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.WriteLine("CABBY: I don't know your name.");
+                    }
+                }
+                else if (matched != null)
                 {
                     var responses = CabbyResponses[matched];
                     string replyBot = responses[new Random().Next(responses.Count)];
 
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect2("\n" + "CABBY: " + replyBot + "\n");
+                    TypingEffect2("\nCABBY: " + replyBot + "\n");
                     Console.ResetColor();
-                    continue;
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect2("\nCABBY: I don't quite understand , could you rephrase?" + "\n");
+                    TypingEffect2("\nCABBY: I don't quite understand, could you rephrase?\n");
                     Console.ResetColor();
                 }
             }
