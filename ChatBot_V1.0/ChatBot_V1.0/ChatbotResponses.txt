@@ -3,103 +3,144 @@
 test|["Yes, I'm here!!", "Hey there! I'm online and ready to chat.", "Present and ready to help!"] 
 
 
-how are you|["I'm doing great! How about you?", "Feeling cyber-secure and ready to assist — how are you?", "All systems go! Let me know how I can help you today."] 
+mood_positive|["That's great to hear!", "Awesome!! I'm glad to hear that ;)"]
 
 
-purpose|["I'm here to help you stay safe online by providing cybersecurity tips!","I’m your cybersecurity companion. Ask me anything to stay safe on the internet.","My job is to guide you through safe online practices. Ask away!"]
+mood_negative|["I'm sorry to hear that. I'm here to help.", "Oh no, Hope all is okay :( ", "That sounds frustrating."]
 
 
-ask you|["You can ask me about things like: > Phishing and examples > Password safety > Safe browsing tips","Need help with cybersecurity? I cover: > Phishing > Password strength > Secure browsing","I'm good with: > Recognizing phishing > Creating strong passwords > Spotting secure websites"]
+how are you|["I'm doing great! How about you?", "Feeling cyber-secure and ready to assist — how are you?", "All systems go! How are you ?."] 
 
 
-yes|["Sure! What would you like me to clarify?","Absolutely! Let's dive in.","Of course. What can I help with?"]
+purpose|["I'm here to help you stay safe online by providing cybersecurity tips!", "I’m your cybersecurity companion. Ask me anything to stay safe on the internet.", "My job is to guide you through safe online practices. Ask away!"]
 
 
-no|["Awesome, thanks for the chat ;)","Okay, take care and stay cyber-safe!","All right! Let me know if you need help later."]
+ask you|["You can ask me about things like: > Phishing > Password safety > Safe browsing tips", "Need help with cybersecurity? I cover: > Phishing > Password safety > Safe browsing", "I'm good with: > Phishing > Password safety > Safe browsing"]
 
 
-thank you|["Glad I could help! Anything else?","You're welcome! Stay safe online.","Happy to help. Got any other questions?"]
+yes|["Sure! What would you like me to clarify?", "Absolutely! Let's dive in.", "Of course. What can I help with?"]
 
 
-thanks|["No problem glad i could help","all good, good to chat !! :)"]
+no|["Awesome, thanks for the chat ;)", "Okay, take care and stay cyber-safe!", "All right! Let me know if you need help later."]
 
 
-question|["fire away ;) I'm here to help !!"]
+thank you|["Glad I could help! Anything else?", "You're welcome! Stay safe online.", "Happy to help. Got any other questions?"]
 
 
-questions|["fire away ;) I'm here to help !!"]
+thanks|["No problem, glad I could help.", "All good, good to chat !! :)"]
 
 
-questions can|["I can assist with cyber-security related questions, such as phishing, password safety and safe browsing practices"]
+question|["Fire away ;) I'm here to help !!"]
 
 
-help|["Sure, no problem! What would you like help with?","I'm here to assist. What do you need?","Of course! Tell me what you're stuck on."]
+questions|["Fire away ;) I'm here to help !!"]
 
 
-goodbye|["Cheers, thanks for the chat ;)","Goodbye! Stay safe and secure.","See you later! Don’t forget to use strong passwords."]
+questions can|["I can assist with cyber-security related questions, such as phishing, password safety, and safe browsing practices"]
 
 
-joke|["Why did the computer show up at work late?...... It had a hard drive.","Why do hackers wear leather jackets? Because they love to break the code!","Why was the smartphone acting shy? It lost its sense of security."]
+help|["Sure, no problem! What would you like help with?", "I'm here to assist. What do you need?", "Of course! Tell me what you're stuck on."]
 
 
-good thanks|"Cool, no problem.","Glad to hear it!","Awesome. If you have any questions, let me know."]
+goodbye|["Cheers, thanks for the chat ;)", "Goodbye! Stay safe and secure.", "See you later! Don’t forget to use strong passwords."]
 
 
-//phishing
+joke|["Why did the computer show up at work late?...... It had a hard drive.", "Why do hackers wear leather jackets? Because they love to break the code!", "Why was the smartphone acting shy? It lost its sense of security."]
 
 
-phishing|["Phishing is a scam where fake messages lure people into revealing sensitive data like passwords or banking info.","Phishing is a cyberattack where deceptive messages trick users into giving up personal info."]
+good thanks|["Cool, no problem.", "Glad to hear it!", "Awesome. If you have any questions, let me know."]
 
 
-examples of phishing|["> Fake emails from banks or services asking you to log in > Texts with urgent language and suspicious links > Social media messages with strange links"]
+// PHISHING
 
 
-phishing examples|["Examples include: > 'Your account has been suspended' emails > Fake websites mimicking real ones > Messages urging you to confirm payment info urgently"]
-tes
+phishing|["Phishing is a scam where fake messages lure people into revealing sensitive data like passwords or banking info.", "Phishing is a cyberattack where deceptive messages trick users into giving up personal info.", "Think of phishing as bait — scammers use emails or texts to hook you into clicking bad links."]
 
-phishing tips|["> Don't click suspicious links or attachments > Always verify the sender's email address > Hover over links to see the real URL before clicking"]
 
+examples of phishing|["> Fake emails from banks or services asking you to log in > Texts with urgent language and suspicious links > Social media messages with strange links", "> Messages saying 'Your account is locked!' and asking for details > Fake tech support pop-ups > Emails with unexpected attachments"]
 
-avoid phishing|["> Use spam filters > Don’t trust urgent requests for personal info > Never share passwords via email or text"]
 
+phishing examples|["Examples include: > 'Your account has been suspended' emails > Fake websites mimicking real ones > Messages urging you to confirm payment info urgently", "You might see: > Emails from 'Netflix' asking you to update billing > Links that look like PayPal but are slightly misspelled"]
 
-identify phishing|["Look for: > Spelling errors > Urgent or threatening tone > Mismatched URLs or sender addresses"]
 
+avoid phishing|["> Use spam filters > Don’t trust urgent requests for personal info > Never share passwords via email or text", "Be skeptical of messages that seem off. When in doubt, contact the company directly.", "Don’t click — investigate. When a message feels fishy, it probably is."]
 
-//Password saftey
 
-what is password safety|["Password safety involves creating and managing strong, unique passwords for each online account to prevent unauthorized access"]
+identify phishing|["Look for: > Spelling errors > Urgent or threatening tone > Mismatched URLs or sender addresses", "If the message says something bad will happen *right now* unless you act — that’s a red flag.", "Hover over links: If the destination looks odd or misspelled, it's likely phishing."]
 
 
-password safety|["Use strong, unique passwords for every account — include letters, numbers, and symbols. Avoid using personal info like birthdays."]
+phishing tips|["Don't click suspicious links or attachments","Always verify the sender’s email address","Hover over links to check the real URL before clicking","Be cautious of messages with urgent or threatening language","Never share personal or financial information via email or text"]
 
 
-strong password|["> Use long, unique passwords > Include letters, numbers, and symbols > Avoid personal info"]
+tips for phishing|["Watch out for urgent requests — they’re often a red flag","Check the sender’s email for strange addresses or typos","Don’t open attachments unless you trust the source","Use spam filters to reduce phishing attempts","Report suspected phishing to your email provider or IT team"]
 
 
-methods of password safety|["> Each account should have a different password > Use a password manager if needed"]
+phishing safety tips|["Never respond to emails asking for personal info","Double-check URLs before logging into any site","Be careful with messages that ask you to 'act now'","Keep your devices updated to block phishing sites","Educate yourself on common phishing tactics"]
 
 
-good password|["Good passwords, should contain a mix of both Numbers, Letters and Special characters"]
+tips on phishing safety|["Treat unexpected messages with caution","Avoid clicking links from unknown senders","Look out for grammar errors and suspicious design in emails","Confirm requests through another channel (e.g., call the company)","Enable multi-factor authentication where possible"]
 
 
-password tips|["Never reuse the same password across multiple accounts — use a password manager if needed."]
+phishing tip|["Think before you click — phishing often looks legit","Always verify unexpected messages, especially if they involve money","Report phishing emails to help protect others"]
 
 
-//safe browsing
 
-what is safe browsing|["Safe browsing refers to habits and practices that protect users while navigating the internet."]
+// PASSWORD SAFETY
 
 
-examples of safe browsing|["When shopping online, make sure the site uses HTTPS and has a padlock icon.","Example 4: Before downloading software, verify the source is trusted and read user reviews.","Example 5: Always update your browser to the latest version to fix known security issues."]
+what is password safety|["Password safety involves creating and managing strong, unique passwords for each online account to prevent unauthorized access", "It's about protecting your digital keys — don’t reuse them, and make them hard to guess."]
 
 
-safe browsing|["Safe browsing includes: > Avoiding suspicious links > Not downloading unknown files > Checking website security","Stay safe by: > Using secure (HTTPS) websites > Avoiding public Wi-Fi for transactions > Keeping your browser updated","To browse safely: > Be cautious of pop-ups > Use antivirus software > Don’t share personal info carelessly"]
+password safety|["Passwords are personal keys that allow users to access their own data, therefore password saftey is important to enusure that sensitive data stays private to users.", "Password safety means the privacy of users data by the use of complex passwords"]
 
 
-safe browsing examples|["Avoid clicking on pop-up ads that say you’ve won a prize—these are often scams."]
+strong password|["> Use long, unique passwords > Include letters, numbers, and symbols > Avoid personal info", "> Aim for 12+ characters > Mix upper & lower case letters > Throw in special characters like !@#", "Don’t use names, birthdays, or the word 'password'."]
 
 
-safe browsing practices|["When using public Wi-Fi, avoid logging into banking or email accounts unless you're on a VPN."]
+methods of password safety|["> Each account should have a different password > Use a password manager if needed", "Change passwords regularly, especially if you suspect a breach.", "Enable two-factor authentication wherever possible."]
 
+
+good password|["Good passwords should contain a mix of both numbers, letters, and special characters", "A good password example? Try something like: H0bbyH0r$e_2025!", "Think passphrase instead of password: 'Tree&Breeze@Sunset' is easier to remember and harder to crack."]
+
+
+password tips|["Never reuse the same password across multiple accounts — use a password manager if needed.", "Update your passwords at least once a year.", "Avoid using real words alone. Hackers use dictionaries."]
+
+
+tips for password safety|["Use a long password with letters, numbers, and symbols","Don’t reuse passwords across multiple accounts","Avoid using personal info like names or birthdays","Change your passwords regularly and check for breaches"]
+
+
+password safety tips|["Use a long password with letters, numbers, and symbols","Don’t reuse passwords across multiple accounts","Avoid using personal info like names or birthdays","Change your passwords regularly and check for breaches"]
+
+
+tips on password safety|["Use a long password with letters, numbers, and symbols","Don’t reuse passwords across multiple accounts","Avoid using personal info like names or birthdays","Change your passwords regularly and check for breaches"]
+
+
+password safety tip|["Use a long password with letters, numbers, and symbols","Don’t reuse passwords across multiple accounts","Avoid using personal info like names or birthdays","Change your passwords regularly and check for breaches"]
+
+
+// SAFE BROWSING
+
+
+what is safe browsing|["Safe browsing refers to habits and practices that protect users while navigating the internet.", "It’s about being aware and cautious when surfing the web to avoid scams, malware, and data leaks."]
+
+
+safe browsing|["Safe browsing includes: > Avoiding suspicious links > Not downloading unknown files > Checking website security", "Stay safe by: > Using secure (HTTPS) websites > Avoiding public Wi-Fi for transactions > Keeping your browser updated", "To browse safely: > Be cautious of pop-ups > Use antivirus software > Don’t share personal info carelessly"]
+
+
+examples of safe browsing|["Avoid clicking on pop-up ads that say you’ve won a prize—these are often scams.", "When shopping online, make sure the site uses HTTPS and has a padlock icon.", "Before downloading software, verify the source is trusted and read user reviews."]
+
+
+safe browsing examples|["Using incognito mode on public computers is a safe browsing habit.", "Logging out after using online banking is another good example."]
+
+
+safe browsing practices|["When using public Wi-Fi, avoid logging into banking or email accounts unless you're on a VPN.", "Use browser extensions that block trackers and ads.", "Keep your system and antivirus software updated."]
+
+
+tips for safe browsing|["Avoid clicking on suspicious links or pop-ups","Only enter personal info on secure (HTTPS) websites","Use a VPN on public Wi-Fi","Don’t download files from untrusted sources"]
+
+
+tip for safe browsing|["Avoid clicking on suspicious links or pop-ups","Only enter personal info on secure (HTTPS) websites","Use a VPN on public Wi-Fi","Don’t download files from untrusted sources"]
+
+
+safe browsing tip|["Avoid clicking on suspicious links or pop-ups","Only enter personal info on secure (HTTPS) websites","Use a VPN on public Wi-Fi","Don’t download files from untrusted sources"]
 

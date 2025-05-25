@@ -26,11 +26,15 @@ namespace ChatBot_V1._0
 
         public Dictionary<string, List<string>> CabbyResponses = new();
 
-        public BotInterface()
+        private string? GetKeyword(string input)
         {
-            LoadResponses("ChatbotResponses.txt");
+            foreach (var key in CabbyResponses.Keys.OrderByDescending(k => k.Length))
+            {
+                if (input.Contains(key))
+                    return key;
+            }
+            return null;
         }
-
         private void LoadResponses(string filePath)
         {
             foreach (var line in File.ReadAllLines(filePath))
@@ -53,6 +57,11 @@ namespace ChatBot_V1._0
                 }
             }
         }
+        public BotInterface()
+        {
+            LoadResponses("ChatbotResponses.txt");
+        }
+
         private Dictionary<string, string> lastResponses = new();
         public string GetResponse(string userInput)
         {
@@ -75,16 +84,6 @@ namespace ChatBot_V1._0
             }
             Console.ForegroundColor = ConsoleColor.Cyan;
             return "Sorry, I didn't quite understand that.";
-
-        }
-        private string? GetKeyword(string input)
-        {
-            foreach (var key in CabbyResponses.Keys.OrderByDescending(k => k.Length))
-            {
-                if (input.Contains(key))
-                    return key;
-            }
-            return null;
         }
         public string? Reader()
         {

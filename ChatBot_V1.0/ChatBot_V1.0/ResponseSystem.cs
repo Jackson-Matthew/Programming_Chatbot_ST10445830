@@ -7,11 +7,11 @@
          * Asking for name is put outside of main response functionality to reduce looping of the same question.
          * Input validation to check if the user has entered anything, if no input is detected a message is displayed prompting the user for input.
         */
+
         public MemorySystem memory = new MemorySystem();
+        public MoodSystem mood = new MoodSystem();
         public void Response()
         {
-            BotInterface bot = new BotInterface();
-
             Console.ForegroundColor = ConsoleColor.Cyan;
             TypingEffect2("CABBY: What is your name?\n");
             Console.ResetColor();
@@ -46,9 +46,28 @@
                 }
 
                 string userInput = input.ToLower();
-                string? matched = CabbyResponses.Keys
-                    .OrderByDescending(k => k.Length)
-                    .FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
+
+                MoodSystem.Mood currentMood = mood.DetermineMood(userInput);
+
+                string? moodKey = currentMood switch
+                {
+                    MoodSystem.Mood.Positive => "mood_positive",
+                    MoodSystem.Mood.Negative => "mood_negative",
+                    _ => null
+                };
+
+                bool moodResponse = false;
+
+                if (moodKey != null && CabbyResponses.ContainsKey(moodKey))
+                {
+                    var moodWithResponses = CabbyResponses[moodKey];
+                    string? moodAnswer = moodWithResponses[new Random().Next(moodWithResponses.Count)];
+
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect2("CABBY: " + moodAnswer + "\n");
+                    Console.ResetColor();
+                    moodResponse = true;
+                }
 
                 if (userInput.Contains("what was i interested in"))
                 {
@@ -59,6 +78,7 @@
                         : "\nCABBY: I don't remember you mentioning an interest yet.\n");
                     Console.ResetColor();
                 }
+
                 else if (userInput.StartsWith("im interested in") ||
                          userInput.StartsWith("i'm interested in") ||
                          userInput.StartsWith("i am interested in"))
@@ -73,6 +93,7 @@
                     TypingEffect2($"\nCABBY: Got it! I've noted that you're interested in {topic}.\n");
                     Console.ResetColor();
                 }
+
                 else if (userInput.Contains("my name"))
                 {
                     if (File.Exists("Memory.txt"))
@@ -87,27 +108,31 @@
                         Console.WriteLine("CABBY: I don't know your name.");
                     }
                 }
-                else if (matched != null)
-                {
-                    var responses = CabbyResponses[matched];
-                    string replyBot = responses[new Random().Next(responses.Count)];
 
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect2("\nCABBY: " + replyBot + "\n");
-                    Console.ResetColor();
-                }
-                else
+                else if (!moodResponse)
                 {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect2("\nCABBY: I don't quite understand, could you rephrase?\n");
-                    Console.ResetColor();
+                    string? matched = CabbyResponses.Keys
+                        .OrderByDescending(k => k.Length)
+                        .FirstOrDefault(key => userInput.Contains(key.Replace("_", " ")));
+
+                    if (matched != null)
+                    {
+                        var responses = CabbyResponses[matched];
+                        string replyBot = responses[new Random().Next(responses.Count)];
+
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        TypingEffect2("\nCABBY: " + replyBot + "\n");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        TypingEffect2("\nCABBY: I don't quite understand, could you rephrase?\n");
+                        Console.ResetColor();
+                    }
                 }
             }
         }
     }
 }
-/* 
-* Responsefeature method implements the dictionary created in BotInterface,
-* if the user input is upper case the userInput is converted to lowercase so 
-* that the text can correspond with the keywords set in the dictionary.
-*/
+
