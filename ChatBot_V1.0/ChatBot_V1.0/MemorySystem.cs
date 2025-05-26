@@ -27,3 +27,8 @@
         }
     }
 }
+
+/*
+ * Reads and writes to a txt file called Memory.txt that will save the users name aswell as the topic discussed
+ * The txt file will then be saved during the current session but will wipe when the bot is closed.
+ */

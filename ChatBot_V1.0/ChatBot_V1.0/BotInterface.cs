@@ -24,6 +24,12 @@ namespace ChatBot_V1._0
             Console.WriteLine();
         }
 
+        /* 
+        * The TypingEffect methods aims to simulate each word that the system outputs as if it is being typed.
+        *The string text takes in all text and loops through it each character is then printed out, Thread.sleep() determines the 
+        * speed at which these characters are printed out onto the console.
+        */
+
         public Dictionary<string, List<string>> CabbyResponses = new();
 
         private string? GetKeyword(string input)
@@ -92,18 +98,14 @@ namespace ChatBot_V1._0
     }
 }
 
-/* 
-* The TypingEffect methods aims to simulate each word that the system outputs as if it is being typed.
-* The string text takes in all text and loops through it each character is then printed out, Thread.sleep() determines the 
-* speed at which these characters are printed out onto the console.
-*/
-
 /*
-* The Dictionary has keywords that are assigned to it that then have pre-determined responses.
+* The Dictionary has keywords located in a txt file that are assigned to it that then have pre-determined responses.
 * If a keyword is detected by the dictionary it will output the given repsonse that is associated with that keyword.
 * <string, string> represents the key and the value associated with it.
 * The program will loop through the dictionary to determine if the input matches a key then returns the value.
 */
+
+
 
 
 

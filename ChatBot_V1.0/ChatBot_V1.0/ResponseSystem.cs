@@ -10,6 +10,8 @@
 
         public MemorySystem memory = new MemorySystem();
         public MoodSystem mood = new MoodSystem();
+
+        //constructors for the MemorySystem and MoodSytem classes.
         public void Response()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -29,6 +31,11 @@
             System.IO.File.WriteAllText("Memory.txt", inputMemory);
 
             string? savedName = File.ReadAllText("Memory.txt");
+
+            /*
+             * The while loop contains the logic for checking if certain conditions are true such as memeory recall, mood of the user
+             * and if the user has entered input that the bot can respond too.
+             */
 
             while (true)
             {
@@ -68,6 +75,11 @@
                     Console.ResetColor();
                     moodResponse = true;
                 }
+
+                /*
+                 * takes what the user is intersted in and returns that topic
+                 * if the user has not stated any interests then cabby will state that he doesnt recall anything.
+                 */
 
                 if (userInput.Contains("what was i interested in"))
                 {

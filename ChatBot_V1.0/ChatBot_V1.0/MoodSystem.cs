@@ -23,3 +23,7 @@
         }
     }
 }
+
+/* takes the user input and puts it through an if else statement that checks for
+*  the correct word associated wheather it be possitve or negative.
+*/
